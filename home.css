@@ -175,7 +175,7 @@
             flex-wrap: wrap;
              border:2px solid rgb(196, 159, 159);
             border-radius:10px;
-            width:100%;
+            width:1fr;
             height:400px;
             margin: 0.3125rem;
             padding:20px;
