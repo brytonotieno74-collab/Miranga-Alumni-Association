@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:hsla(226, 93%, 34%, 0.842);
+    color: #fff;
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+nav{
+    grid-area: nav;
+   
+}
+header{
+    grid-area:header;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    text-align: center;
+}
+main{
+    grid-area: main;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer{
+    grid-area:footer;
+}
+.navigation{
+     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navigation ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+.navigation a{
+    text-decoration: none;
+    color:#fff;
+    font-size:1.4rem;
+    padding:1.1rem;
+    font-weight:bold;
+    margin-left:10px;
+}
+nav,header,main{
+    /*border:2px solid rgb(175, 121, 121);*/
+    margin:2px;
+    filter:brightness(80%);
+    background-image: url("dark-blue-abstract-background-with-golden-curves-vector-33174024\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: scroll;
+    padding:20px;
+    border-radius: 10px;
+    gap:10px;
+}
+footer{
+    margin:0;
+    background-color: black;
+
+}
+header h1{
+    justify-content: center;
+    align-items: center;
+}
+.main-section{
+    display:grid;
+    height:100vh;
+    min-height: max-content;
+    grid-template-columns: 1fr 4fr 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "history history history"
+    "mission mission aside"
+    "vision vision aside"
+    ;
+}
+.history{
+    grid-area:history;
+}
+.mission{
+    grid-area:mission;
+}
+.vision{
+    grid-area:vision;
+}
+.aside{
+    grid-area:aside;
+}
+.history,.mission,.vision,.aside{
+    border:2px solid rgb(49, 137, 238);
+    margin:2px;
+    padding:20px;
+    border-radius: 10px;
+   
+
+}
+.history p{
+    display: inline-block;
+    font-size: 1.2rem;
+    padding:10px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.history h3{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.mission h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.mission p{
+    display:inline-block;
+    font-size: 1.2rem;
+    padding:20px;
+    text-align: center;
+}
+.vision h3{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+  .vision p{
+    display: inline-block;
+    min-height: max-content;
+    font-size: 1.2rem;
+    padding:20px;
+    text-align: center;
+}
+   a:hover{
+    color:rgb(33, 240, 171);
+    background-color: black;
+    transition: 1s;
+    border-radius: 5px;
+   } 
+  
+.footer{
+            display:flex;
+            flex-direction: column;
+            min-height:100%;
+            margin:0;
+    
+          }
+          .footer-contact{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+          }
+          .contacts, .Social-media, .Quick-links{
+            margin:10px;
+            text-align: center;
+            font-size:1.1rem;
+          }
+          
+          
+          .Quick-links ul{
+            list-style-type: none;
+          
+          }
+          .Social-media ul{
+            list-style-type: none;
+          }
+          .Quick-links a{
+             text-decoration: none;
+             font-size:20px;
+             color:#fff;
+          }
+          .Social-media a{
+            text-decoration: none;
+            font-size: 20px;
+            color:#fff;
+          }
+          .Social-media li{
+            padding: 5px;
+            border:1px solid rgba(17, 16, 16, 0.836);
+            margin:10px;
+            border-radius: 12px;
+            background-color: rgb(4, 20, 41);
+
+          }
+          .Quick-links li{
+            padding: 5px;
+            border:1px solid rgba(17, 16, 16, 0.836);
+            margin:10px;
+            border-radius: 12px;
+            background-color: rgb(4, 20, 41);
+          }
+          .contacts p{
+            margin:5px;
+            padding:10px;
+          }
+          .Copyright{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size:20px;
+            margin-bottom: 20px;
+          }
+          
+         
